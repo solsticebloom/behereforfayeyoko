@@ -424,7 +424,7 @@ nav a {
     color: #34495e;
     padding: 0.5rem 1rem;
     margin: 0.5rem 0;
-    border: 1px solid #ddd;
+    border: 0px solid #ddd;
     border-radius: 5px;
     width: 80%;
     text-align: center;
