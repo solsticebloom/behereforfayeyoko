@@ -1,4 +1,4 @@
-/* Global Styles */
+\/* Global Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -313,4 +313,62 @@ body {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
+}
+
+.container {
+  width: 100%;
+  padding: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styles for devices with a width of up to 768px (like tablets and smartphones) */
+@media (max-width: 768px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  .biography-container, .performances-container {
+    font-size: 0.9rem; /* Smaller font size for better readability on mobile */
+  }
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.biography-container, .performances-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+h2, h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .biography-container, .performances-container {
+        padding: 0.5rem;
+    }
+
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
 }
