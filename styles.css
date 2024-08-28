@@ -209,33 +209,33 @@ body {
     margin-bottom: 40px;
 }
 
+/* Ensure no conflicting .container styles */
 .container {
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: flex-start; /* Use flex-start instead of left */
+    align-items: flex-start; /* Use flex-start instead of left */
+    width: 100%;
+    padding: 1rem;
 }
 
 .poster {
     background-color: #fff;
-    border-radius: 0px;
+    border-radius: 0;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    max-width: 270px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
+    width: 360px; /* Set width */
+    height: 810px; /* Set height */
+    position: relative; /* Position relative for absolute children */
+    box-sizing: border-box; /* Include padding and border in width and height */
 }
 
 .poster img {
-    width: 270px;
-    height: 280px;
-    border-radius: 0px;
-}
-
-.poster img {
-    width: 30%; /* Scales the image to 80% of the box width */
-    height: auto;
-
-
+    width: 100%; /* Scale image to fill the poster width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0;
 }
 
 .info {
@@ -255,8 +255,17 @@ body {
 }
 
 .info .date, .info .location {
-    font-size: 16px;
-    color:  #000000;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.info .date i, .info .location i {
+    margin-right: 8px;
 }
 
 .info a.buy-tickets {
@@ -275,49 +284,12 @@ body {
     background-color: #c0392b;
 }
 
-
-.poster {
-    width: 360px;  /* Set width */
-    height: 310px; /* Set height */
-    overflow: hidden; /* Hide overflow to manage cropping */
-    position: relative; /* Position relative for absolute children */
-}
-
-.date, .location {
-    background-color: #3498db; /* Background color for the boxes */
-    color: #fff; /* Text color */
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.date i, .location i {
-    margin-right: 8px;
-}
-
-.buy-tickets {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.container {
-  width: 80%;
-  padding: 1rem;
-}
-
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
 }
+
 
 /* Styles for devices with a width of up to 768px (like tablets and smartphones) */
 @media (max-width: 768px) {
