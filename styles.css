@@ -284,7 +284,7 @@ body {
 
 .poster {
     width: 400px;  /* Set width */
-    height: 850px; /* Set height */
+    height: 1000px; /* Set height */
     overflow: hidden; /* Hide overflow to manage cropping */
     position: relative; /* Position relative for absolute children */
 }
