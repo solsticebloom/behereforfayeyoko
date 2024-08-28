@@ -289,6 +289,25 @@ img {
     height: auto;
     box-sizing: border-box;
 }
+.info a.buy-tickets {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db; /* Background color */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    z-index: 10; /* Ensure button is above other elements if needed */
+}
+
+.info a.buy-tickets:hover {
+    background-color: #c0392b; /* Hover background color */
+}
+.info a.buy-tickets {
+    border: 1px solid red; /* Temporary border for visibility testing */
+}
 
 
 /* Styles for devices with a width of up to 768px (like tablets and smartphones) */
