@@ -8,15 +8,11 @@ body {
 }
 
 header {
-    background-color: #34495e;
-    color: #ecf0f1;
-    padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    header {
+    padding: 10px 15px; /* Reduce padding */
+    font-size: 20px; /* Adjust font size */
+}
+    
 }
 
 header h1 {
