@@ -372,3 +372,77 @@ p {
         font-size: 0.9rem;
     }
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFE4E1; /* Light pink background */
+    margin: 0;
+    padding: 0;
+}
+
+#press {
+    padding: 40px;
+    text-align: center;
+}
+
+#press h2 {
+    font-size: 36px;
+    color: #d874a4; /* Pink color */
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 800px;
+}
+
+.poster img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    padding: 20px;
+    text-align: left;
+    flex: 1;
+}
+
+.info h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info .date, .info .location {
+    color: #666;
+    margin: 5px 0;
+}
+
+.info p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.buy-tickets {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.buy-tickets:hover {
+    background-color: #555;
+}
