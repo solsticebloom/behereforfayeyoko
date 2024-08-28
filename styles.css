@@ -220,7 +220,7 @@ body {
     border-radius: 0px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    max-width:1250px;
+    max-width: 270px;
     display: flex;
     flex-direction: column;
 }
@@ -310,7 +310,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 80%;
   padding: 1rem;
 }
 
