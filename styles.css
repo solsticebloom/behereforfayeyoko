@@ -526,20 +526,68 @@ h1 {
     margin: 0;
 }
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: relative;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
 .menu-container {
     position: relative;
+    display: flex;
+    align-items: center;
+    flex: 1; /* Ensures the container takes the remaining space */
 }
 
 .menu-toggle {
     background: none;
     border: none;
     color: white;
-    font-size: 24px;
+    font-size: 28px;
     cursor: pointer;
+    transition: color 0.3s;
+    position: absolute;
+    top: 50%;
+    right: 15px; /* Adjust based on header padding */
+    transform: translateY(-50%); /* Centers the button vertically with respect to the header */
+    z-index: 2; /* Ensures the button is above the menu */
+}
+
+.menu-toggle:hover {
+    color: #f39c12;
 }
 
 .nav-menu {
-    display: none;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    right: 15px; /* Align with the toggle button */
+    background-color: #003366;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease-out, opacity 0.3s ease;
+    z-index: 1; /* Ensures the menu is behind the button */
+}
+
+.nav-menu.show {
+    max-height: 300px; /* Adjust based on the number of menu items */
+    opacity: 1;
 }
 
 .nav-menu ul {
@@ -549,14 +597,24 @@ h1 {
 }
 
 .nav-menu ul li {
-    padding: 10px 0;
+    padding: 10px 20px;
+    border-bottom: 1px solid #555;
+}
+
+.nav-menu ul li:last-child {
+    border-bottom: none;
 }
 
 .nav-menu ul li a {
     color: white;
     text-decoration: none;
+    display: block;
 }
 
-.nav-menu.show {
-    display: block;
+.nav-menu ul li a:hover {
+    background-color: #555;
+}
+
+.search-container {
+    /* Add styles for search container if needed */
 }
