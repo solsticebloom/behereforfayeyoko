@@ -429,3 +429,60 @@ nav a {
     width: 80%;
     text-align: center;
 }
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 100%; /* Ensures it fits the width of the mobile screen */
+}
+
+/* Header */
+.header {
+
+background-color: #2c3e50; /* Darker blue for contrast */
+    color: #ecf0f1;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Content */
+.content {
+    padding: 15px;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+/* Image */
+.content img {
+    width: 100%; /* Ensures the image scales to fit the mobile screen */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Mobile first design */
+@media (max-width: 768px) {
+    .header {
+        font-size: 1.2em; /* Adjusts header size for smaller screens */
+    }
+    
+    .content {
+        font-size: 0.9em; /* Slightly smaller text for mobile readability */
+    }
+}
