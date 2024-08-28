@@ -220,7 +220,7 @@ body {
     border-radius: 0px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    max-width: 400px;
+    max-width:300px;
     display: flex;
     flex-direction: column;
 }
@@ -278,7 +278,7 @@ body {
 
 .poster {
     width: 360px;  /* Set width */
-    height: 810px; /* Set height */
+    height: 310px; /* Set height */
     overflow: hidden; /* Hide overflow to manage cropping */
     position: relative; /* Position relative for absolute children */
 }
