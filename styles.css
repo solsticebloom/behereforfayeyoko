@@ -209,88 +209,101 @@ body {
     margin-bottom: 40px;
 }
 
-/* Basic reset and styling */
+/* General reset */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #0a0e1a; /* Dark background for contrast */
+    color: #cfd8dc; /* Light text color */
 }
 
-.container {
+.events-section {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between event cards */
     justify-content: center;
-    align-items: center;
     padding: 20px;
 }
 
-.poster {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 360px;
-    height: auto; /* Adjust height as needed */
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+.event-card {
+    background-color: #1b1f2f; /* Dark panel color for a techy look */
+    border: 1px solid #2c3e50; /* Subtle border for depth */
+    border-radius: 0px;
+    width: 300px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7); /* Deep shadow for futuristic effect */
+    overflow: hidden; /* Prevent overflow */
+    transform-style: preserve-3d; /* 3D transform */
+    transition: all 0.4s ease; /* Smooth transition */
 }
 
-.poster img {
-    width: 100%;
-    height: auto;
-    border-radius: 0;
+.event-card:hover {
+    transform: translateY(-10px) scale(1.02); /* Lift and scale on hover */
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9); /* Enhanced shadow on hover */
 }
 
-.info {
-    padding: 20px;
+.event-image {
+    width: 680px;
+    height: 450px;
+    border-radius: 0px;
+}
+
+.event-header {
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Gradient for header */
+    padding: 15px;
     text-align: center;
 }
 
-.info h1 {
-    font-size: 20px;
-    color: #3498db;
-    margin-bottom: 10px;
+.event-header h1 {
+    font-family: 'Orbitron', sans-serif; /* Techy font */
+    font-size: 13px;
+    color: #ffffff; /* White text for contrast */
+    text-transform: uppercase; /* Uppercase for style */
+    letter-spacing: 1.5px; /* Spacing for futuristic effect */
+    margin: 0;
 }
 
-.info .date-location {
-    margin-bottom: 20px;
+.event-body {
+    padding: 15px;
 }
 
-.info .date, .info .location {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-}
-
-.info .date i, .info .location i {
-    margin-right: 8px;
-}
-
-.info p {
+.event-details p {
     margin: 10px 0;
-    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-.info a.buy-tickets {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+.event-details .date, .event-details .location {
+    color: #00e676; /* Neon green for date and location */
     font-weight: bold;
-    transition: background-color 0.3s ease;
 }
 
-.info a.buy-tickets:hover {
-    background-color: #c0392b;
+.event-details .description {
+    color: #cfd8dc; /* Light grey for description */
+}
+
+.buy-tickets-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.buy-tickets {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00e676; /* Neon green button */
+    color: #0a0e1a; /* Dark text for contrast */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 5px 15px rgba(0, 230, 118, 0.4); /* Button shadow */
+}
+
+.buy-tickets:hover {
+    background-color: #0072ff; /* Neon blue on hover */
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 114, 255, 0.6); /* Enhanced shadow */
 }
 
 
@@ -520,51 +533,57 @@ h1 {
     margin: 0;
     font-size: 24px;
 }
-
+/* Menu Container */
 .menu-container {
     position: relative;
     display: flex;
     align-items: center;
-    flex: 1; /* Ensures the container takes the remaining space */
+    flex: 1;
 }
 
+/* Menu Toggle Button */
 .menu-toggle {
     background: none;
     border: none;
-    color: #ffffff; /* White color for the toggle button text */
-    font-size: 28px;
+    color: #00ffcc; /* Neon teal color for the toggle button text */
+    font-size: 30px;
     cursor: pointer;
-    transition: color 0.3s;
+    transition: color 0.3s; /* Remove transform transition to keep it static */
     position: absolute;
     top: 50%;
-    right: 15px; /* Adjust based on header padding */
-    transform: translateY(-50%); /* Centers the button vertically with respect to the header */
-    z-index: 2; /* Ensures the button is above the menu */
+    right: 15px;
+    transform: translateY(-50%);
+    z-index: 3; /* Increase z-index to keep it above the menu */
 }
 
 .menu-toggle:hover {
-    color: #cccccc; /* Light gray for hover effect */
+    color: #ffffff; /* White for hover effect */
 }
 
+/* Navigation Menu */
 .nav-menu {
     position: absolute;
-    top: 60px; /* Adjust based on header height */
-    right: 15px; /* Align with the toggle button */
-    background-color: #003366; /* Dark blue for the dropdown menu background */
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    top: 60px; /* Position right below the toggle button */
+    right: 15px;
+    background: rgba(0, 51, 102, 0.95); /* Semi-transparent dark blue for depth effect */
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 255, 204, 0.2); /* Neon shadow for a futuristic effect */
     overflow: hidden;
     max-height: 0;
     opacity: 0;
-    transition: max-height 0.4s ease-out, opacity 0.3s ease;
-    z-index: 1; /* Ensures the menu is behind the button */
+    transition: max-height 0.6s ease-out, opacity 0.4s ease;
+    z-index: 2; /* Ensure the menu is behind the toggle */
+    backdrop-filter: blur(10px); /* Blur effect for a modern glass-like appearance */
+    width: max-content; /* Adjusts the menu width to fit its content */
+    min-width: 200px; /* Minimum width to keep the menu looking balanced */
 }
 
 .nav-menu.show {
-    max-height: 300px; /* Adjust based on the number of menu items */
+    max-height: 400px; /* Increased height for more menu items */
     opacity: 1;
 }
 
+/* Menu Items */
 .nav-menu ul {
     list-style: none;
     padding: 0;
@@ -572,22 +591,39 @@ h1 {
 }
 
 .nav-menu ul li {
-    padding: 10px 20px;
-    border-bottom: none; /* Remove bottom borders */
+    padding: 10px 20px; /* Reduced padding for a more compact look */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle bottom border for item separation */
+    white-space: nowrap; /* Prevents line break for longer text */
 }
 
 .nav-menu ul li a {
-    color: #ffffff; /* White color for menu item text */
+    color: #00ffcc; /* Neon teal color for menu item text */
     text-decoration: none; /* Remove underline from links */
     display: block;
-    font-size: 18px; /* Adjust font size for menu items */
+    font-size: 18px;
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    position: relative;
+    white-space: nowrap; /* Keeps text in one line */
+    padding: 8px 15px; /* Adjust padding to make menu more compact */
 }
 
-.nav-menu ul li a:hover {
-    background-color: #002244; /* Darker blue for hover effect */
+/* Adding Icons */
+.nav-menu ul li a::before {
+    content: '⫸'; /* Cool arrow-like icon */
+    margin-right: 10px;
+    color: #00ffcc; /* Neon color for icons */
+    transition: transform 0.3s;
+}
+
+.nav-menu ul li a:hover::before {
+    transform: translateX(5px); /* Subtle animation for icons */
+}
+
+/* Additional Cool Effects */
+.nav-menu ul li a::after {
+    display: none; /* Removed underline effect */
 }
 
 .search-container {
     /* Add styles for search container if needed */
 }
-
