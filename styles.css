@@ -243,9 +243,9 @@ body {
 }
 
 .event-image {
-    width: 700px;
-    height: 600px;
-    border-radius: 0px;
+    width: 600px;
+    height: auto; /* This will maintain the aspect ratio */
+    border-radius: 0px; 
 }
 
 
