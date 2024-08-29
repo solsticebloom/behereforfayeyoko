@@ -251,7 +251,7 @@ body {
 
 .event-header {
     background: linear-gradient(135deg, #00c6ff, #0072ff); /* Gradient for header */
-    padding: 15px;
+    padding: 10px;
     text-align: center;
 }
 
