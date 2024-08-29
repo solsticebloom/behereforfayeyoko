@@ -242,12 +242,12 @@ body {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9); /* Enhanced shadow on hover */
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto; /* This centers the image */
-    }
+.event-image {
+    width: 700px;
+    height: 600px;
+    border-radius: 0px;
+}
+
 
 .event-header {
     background: linear-gradient(135deg, #00c6ff, #0072ff); /* Gradient for header */
