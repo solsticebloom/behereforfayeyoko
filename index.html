@@ -1,629 +1,420 @@
-\/* Global Styles */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #2c3e50, #bdc3c7);
-    color: #ecf0f1;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FayeYoko - Fan Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
 
- header {
-    padding: 5px 10px; /* Reduce padding */
-    font-size: 20px; /* Adjust font size */
-}
-}
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #2c3e50, #bdc3c7);
+            color: #ecf0f1;
+        }
+        header {
+            background-color: #34495e;
+            color: #ecf0f1;
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-    text-align: center;
-}
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #3498db;
+        }
+        
+        }
+        section {
+            padding: 4rem 2rem;
+            margin-top: 90px; /* Adjust to account for fixed header */
+        }
+        .box {
+            background-color: #2c3e50;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 2rem;
+        }
+        .biography-container img {
+            width: 270px;
+            height: 350px;
+            border-radius: 0%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 1rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            background: #34495e;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #2c3e50;
+        }
+        th {
+            background-color: #2c3e50;
+        }
+        tr:nth-child(even) {
+            background-color: #1e272e;
+        }
+        tr:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+        h2 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #2980b9;
+        }
+        .personal-details img {
+            width: 250px; /* Adjust width as needed */
+            height: 280px; /* Adjust height as needed */
+            object-fit: cover; /* Maintain aspect ratio and center the image */
+            border-radius: 5px; /* Optional: add border-radius for rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: add shadow for better presentation */
+            margin-bottom: 1rem; /* Adds spacing between the image and the text */
+        }
+    </style>
+</head>
+<body>
+   <header>
+        <h1>BE HERE FOR FAYEYOKO</h1>
+        <div class="menu-container">
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#biography">Biography</a></li>
+                    <li><a href="#social-media">Social Media Links</a></li>
+                    <li><a href="#press">Events</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#press">Press and Media</a></li>
+                    <li><a href="#press">Awards</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-container">
+            <!-- Search functionality can be added here -->
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>
 
-nav ul li {
-    margin: 0 15px;
-}
+    <section id="biography" class="box">
+        <div class="biography-container">
+            <img src="images/a95fea7c-47ea-4a8a-8daf-404175f42a80.jpg" alt="Faye Peraya">
+            <p>Faye Peraya Malisorn, known professionally as Supaporn Malisorn. She is a well-known Thai actress, model, and former beauty queen. She gained widespread recognition after winning Miss Grand Thailand in 2016, which launched her career in the entertainment industry. Born on October 14, 1994, in Prachin Buri, Thailand, she initially dreamed of becoming a teacher but later pursued a career in acting after achieving success in beauty pageants. Faye signed a contract with Channel 7 in 2017, which significantly boosted her profile in Thai television. Some of her notable roles include playing Khun Nueng in "Blank the Series", a popular Thai GL drama that has captivated audiences with its heartfelt storyline.</p>
 
-nav ul li a {
-    color: #ecf0f1;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
+            <h3>Career Highlights</h3>
+            <ul>
+                <li><strong>Debut:</strong> Faye made her acting debut in the television series <i>Mussaya (Thai: มัสยา)</i> in 2017.</li>
+                <li><strong>Breakthrough Role:</strong> Her role in <i>Blank The Series</i> where she played the character Khun Nueng. This role significantly boosted her popularity, making her a well-known figure in the Thai entertainment industry. The success of "Blank The Series," especially its heartfelt storyline involving her character, played a key role in elevating her career, leading to further opportunities and recognition both in Thailand and internationally.</li>
+                <li><strong>Awards:</strong> Faye has won several awards, including <i>Miss Grand Thailand 2016</i> and <i>Beauty Queen of the Year 20th Komchadluek Awards 2024</i>.</li>
+                <li><strong>Recent Work:</strong> Recently, she starred in <i>Blank The Series</i>, which was a major hit both commercially and critically.</li>
+            </ul>
+            <h3>Personal Achievements</h3>
+            <ul>
+                <li><strong>Education:</strong> She holds a degree in <i>Bachelor of Business Administration</i> from <i>Ramkhamhaeng University</i>.</li>
+                <li><strong>Personal Interests:</strong> Faye enjoys <i>painting, playing guitar, and playing badminton</i> in her spare time.</li>
+            </ul>
+            <h3>Company</h3>
+            <p>Faye is associated with NineStarStudiosTH, a renowned production company known for its high-quality content and strong female leadership.</p>
+        </div>
+    </section>
 
-nav ul li a:hover {
-    color: #3498db;
-}
+    <section id="performances" class="box">
+        <div class="performances-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Mussaya</strong></td>
+                        <td>2017</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nang Rai</strong></td>
+                        <td>2019</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Song Naree</strong></td>
+                        <td>2019</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Marn Bang Jai</strong></td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td><strong>It All Begins At The Sea</strong></td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Prik Gub Klur</strong></td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td><strong>The Tale of Skyward Sword</strong></td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Twist of Fate</strong></td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Blank The Series</strong></td>
+                        <td>2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-/* Sections */
-section {
-    padding: 4rem 2rem;
-    margin-top: 70px; /* Adjust to account for fixed header */
-    background: #34495e;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+    <!-- Link to Google Fonts for Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <!-- Your other CSS files or styles here -->
+</head>
+<section id="salon">
+        <h2>AMOR BOUTIQUE SALON</h2>
+        <div class="map-container">
+            <!-- Embedded Google Map -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.6969741994835!2d100.57343787391055!3d13.736787086653516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f15fb00d245%3A0x79e1b948f4cc6206!2sAmor%20boutique%20salon!5e0!3m2!1sen!2sph!4v1724565110312!5m2!1sen!2sph" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+</body>
+</html>
 
-h2 {
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: #3498db;
-}
-
-h3 {
-    color: #ecf0f1;
-}
-
-p {
-    line-height: 1.6;
-}
-
-/* Biography Section */
-.biography-container img {
-    max-width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin-bottom: 1rem;
-}
-
-.biography-container ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-/* Performances Table */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-    background: #34495e;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-th, td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #2c3e50;
-}
-
-th {
-    background-color: #2c3e50;
-}
-
-tr:nth-child(even) {
-    background-color: #1e272e;
-}
-
-tr:hover {
-    background-color: #3498db;
-    color: #fff;
-}
-
-/* Links */
-a {
-    color: #3498db;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #2980b9;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
+<style>
+    .biography-container {
+        font-family: 'Roboto', san-serif;
     }
+</style>
 
-    nav ul li {
-        margin: 10px 0;
-    }
-}
+   <section id="biography" class="box">
+        <div class="biography-container">
+            <img src="C:\Users\Anthony Vargas\Desktop\CODING\images\Yoko Apasraa.jpg">
+            <p>Yoko Apasra Lertprasert, known professionally as Apasra Lertprasert, was born in Bangkok, Thailand on July 19, 2001. She has one older sister, actress Neko Naerunchara Lertprasert. Apasra Lertprasert started acting at the age of two, showcasing her natural talent and love for the craft. She was introduced as a former member of the first generation of The Glass Girls on July 15, 2019. She attended Southland Girls High School in New Zealand before going on to study at Stamford International University.</p>
+            <h3>Career Highlights</h3>
+            <ul>
+                <li><strong>Debut:</strong> Yoko made her acting debut in the television movies <i>Ladda Land.</i> in 2011.</li>
+            <li><strong>Breakthrough Role:</strong> Her role in <i>Blank The Series</i> where she played the character Anueng. This popular role greatly boosted her profile in the Thai entertainment industry and opened up more opportunities for her both in Thailand and internationally.</li>
+                <li><strong>Recent Work:</strong> Recently, she starred in <i>Blank The Series</i>, which was a major hit both commercially and critically.</li>
+            </ul>
+            <h3>Personal Achievements</h3>
+            <ul>
+                <li><strong>Education:</strong> She holds a degree in <i>Bachelor of Communication Arts</i> from <i>Stamford International University</i>.</li>
+                <li><strong>Personal Interests:</strong> Yoko enjoys <i>painting, dancing, and singing</i> in her spare time.</li>
+            </ul>
+            <h3>Company</h3>
+            <p>Yoko is associated with NineStarStudiosTH, a renowned production company known for its high-quality content and strong female leadership.</p>
+        </div>
+    </section>  
 
-/* Add this to your existing CSS */
-img {
-    width: 150px; /* Adjust width to fit Instagram size */
-    height: 150px; /* Adjust height to fit Instagram size */
-    border-radius: 50%; /* Circular shape */
-    object-fit: cover; /* Ensure image covers the dimensions */
-}
+     <section id="performances" class="box">
+        <div class="performances-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Ladda Land</strong></td>
+                        <td>2011</td>
+                    </tr>
+                    <tr>
+                        <td><strong>This Girl is Bad-Ass!!</strong></td>
+                        <td>2011</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Together</strong></td>
+                        <td>2012</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Long Weekend</strong></td>
+                        <td>2013</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Part-Time</strong></td>
+                        <td>2016</td>
+                    </tr>
+                    <tr>
+                        <td><strong>O-Negative</strong></td>
+                        <td>2016</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Love Songs Love Series To Be Continued: Khop Khun Thi Rak Kan</strong></td>
+                        <td>2017</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Miti Sayong Chuea Pen… Mai Chuea Taai</strong></td>
+                        <td>2017</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Home Stay</strong></td>
+                        <td>2017</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Love Books Love Series: The Seven Year Itch 7</strong></td>
+                        <td>2017</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Team Lah Torachon</strong></td>
+                        <td>2018</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Blank The Series</strong></td>
+                        <td>2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-#social-media {
-    text-align: left;
-    padding: 2rem 1rem;
-    background-color: #1e272e; /* Dark background for contrast */
-    border-radius: 10px;
-}
-
-.social-media-links {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Ensures 4 columns */
-    gap: 1rem;
-    justify-content: center;
-}
-
-.social-media-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #ecf0f1;
-    background-color: #34495e;
-    padding: 1rem;
-    border-radius: 0px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s, transform 0.3s;
-    overflow: hidden;
-}
-
-.social-media-link img {
-    width: 40px;
-    height: 40px;
-    margin-right: 1rem;
-    transition: transform 0.3s;
-    border-radius: 0 !important; /* Forces no rounding */
-}
-
-.social-media-link span {
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.social-media-link:hover {
-    background-color: #3498db;
-    transform: translateY(-5px); /* Slightly lifts the card */
-}
-
-.social-media-link:hover img {
-    transform: scale(1.2); /* Slightly enlarges the icon */
-}
-
-h2 {
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-    margin-bottom: 1rem;
-    color: #3498db;
-    font-size: 1.7rem;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 20px;
-}
-
-#press h2 {
-    text-align: left;
-    font-size: 1.7rem;
-    color: #3498db;
-    margin-bottom: 40px;
-}
-
-/* General reset */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #0a0e1a; /* Dark background for contrast */
-    color: #cfd8dc; /* Light text color */
-}
-
-.events-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Space between event cards */
-    justify-content: center;
-    padding: 20px;
-}
-
-.event-card {
-    background-color: #1b1f2f; /* Dark panel color for a techy look */
-    border: 1px solid #2c3e50; /* Subtle border for depth */
-    border-radius: 0px;
-    width: 300px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7); /* Deep shadow for futuristic effect */
-    overflow: hidden; /* Prevent overflow */
-    transform-style: preserve-3d; /* 3D transform */
-    transition: all 0.4s ease; /* Smooth transition */
-}
-
-.event-card:hover {
-    transform: translateY(-10px) scale(1.02); /* Lift and scale on hover */
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9); /* Enhanced shadow on hover */
-}
-
-.event-image {
-    width: 680px;
-    height: 450px;
-    border-radius: 0px;
-}
-
-.event-header {
-    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Gradient for header */
-    padding: 15px;
-    text-align: center;
-}
-
-.event-header h1 {
-    font-family: 'Orbitron', sans-serif; /* Techy font */
-    font-size: 13px;
-    color: #ffffff; /* White text for contrast */
-    text-transform: uppercase; /* Uppercase for style */
-    letter-spacing: 1.5px; /* Spacing for futuristic effect */
-    margin: 0;
-}
-
-.event-body {
-    padding: 15px;
-}
-
-.event-details p {
-    margin: 10px 0;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.event-details .date, .event-details .location {
-    color: #00e676; /* Neon green for date and location */
-    font-weight: bold;
-}
-
-.event-details .description {
-    color: #cfd8dc; /* Light grey for description */
-}
-
-.buy-tickets-container {
-    text-align: center;
-    margin-top: 15px;
-}
-
-.buy-tickets {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #00e676; /* Neon green button */
-    color: #0a0e1a; /* Dark text for contrast */
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 50px;
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-    box-shadow: 0 5px 15px rgba(0, 230, 118, 0.4); /* Button shadow */
-}
-
-.buy-tickets:hover {
-    background-color: #0072ff; /* Neon blue on hover */
-    color: #fff;
-    box-shadow: 0 8px 20px rgba(0, 114, 255, 0.6); /* Enhanced shadow */
-}
-
-
-/* Styles for devices with a width of up to 768px (like tablets and smartphones) */
-@media (max-width: 768px) {
-  .container {
-    padding: 0.5rem;
-  }
-
-  .biography-container, .performances-container {
-    font-size: 0.9rem; /* Smaller font size for better readability on mobile */
-  }
-}
-
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-.biography-container, .performances-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
-    box-sizing: border-box;
-}
-
-h2, h3 {
-    font-size: 1.8rem;
-}
-
-p {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-@media (max-width: 768px) {
-    .biography-container, .performances-container {
-        padding: 0.5rem;
-    }
-
-    h2, h3 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-}
-
-/* Base styles for mobile */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-    font-size: 16px;
-}
-
-header {
-    background-color: #34495e;
-    color:  #34495e;
-    padding: 1rem;
-    text-align: center;
-}
-
-.biography-container {
-    padding: 1rem;
-}
-
-h1, h2, h3 {
-    margin: 0 0 1rem;
-    font-size: 1.5rem;
-}
-
-p {
-    margin: 0 0 1rem;
-}
-
-/* Make images responsive */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Simple mobile navigation */
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:  #34495e;
-    padding: 1rem 0;
-}
-
-nav a {
-    text-decoration: none;
-    color: #34495e;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem 0;
-    border: 0px solid #ddd;
-    border-radius: 5px;
-    width: 80%;
-    text-align: center;
-}
-
-/* General reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and container */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-.container {
-    padding: 15px;
-    margin: 0 auto;
-    max-width: 100%; /* Ensures it fits the width of the mobile screen */
-}
-
-/* Header */
-.header {
-
-background-color: #2c3e50; /* Darker blue for contrast */
-    color: #ecf0f1;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-/* Content */
-.content {
-    padding: 15px;
-    font-size: 1em;
-    line-height: 1.5em;
-    text-align: justify;
-}
-
-/* Image */
-.content img {
-    width: 100%; /* Ensures the image scales to fit the mobile screen */
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-/* Mobile first design */
-@media (max-width: 768px) {
-    .header {
-        font-size: 1.2em; /* Adjusts header size for smaller screens */
-    }
     
-    .content {
-        font-size: 0.9em; /* Slightly smaller text for mobile readability */
-    }
-}
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #34495e; /* Dark blue background */
-    margin: 0;
-    padding: 0;
-}
-
-#salon {
-    padding: 20px;
-    text-align: center;
-}
-
-#salon h2 {
-    font-size: 24px;
-    color: #3498db; /* Lighter blue text color */
-    margin-bottom: 20px;
-}
-
-.map-container {
-    width: 100%;
-    max-width: 400px; /* Limit width for mobile */
-    margin: 0 auto; /* Center on mobile */
-    border: 0px solid #3498db; /* Lighter blue border */
-    border-radius: 0px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-}
-
-iframe {
-    width: 100%; /* Make iframe responsive */
-    height: 400px; /* Set a fixed height for mobile */
-    border: none;
-}
-
-header {
-    position: relative;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-}
-
-h1 {
-    margin: 0;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-header {
-    position: relative;
-    padding: 15px;
-    background-color: #003366; /* Dark blue color for the header background */
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-h1 {
-    margin: 0;
-    font-size: 24px;
-}
-/* Menu Container */
-.menu-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex: 1;
-}
-
-/* Menu Toggle Button */
-.menu-toggle {
-    background: none;
-    border: none;
-    color: #00ffcc; /* Neon teal color for the toggle button text */
-    font-size: 30px;
-    cursor: pointer;
-    transition: color 0.3s; /* Remove transform transition to keep it static */
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    z-index: 3; /* Increase z-index to keep it above the menu */
-}
-
-.menu-toggle:hover {
-    color: #ffffff; /* White for hover effect */
-}
-
-/* Navigation Menu */
-.nav-menu {
-    position: absolute;
-    top: 60px; /* Position right below the toggle button */
-    right: 15px;
-    background: rgba(0, 51, 102, 0.95); /* Semi-transparent dark blue for depth effect */
-    border-radius: 8px;
-    box-shadow: 0 6px 12px rgba(0, 255, 204, 0.2); /* Neon shadow for a futuristic effect */
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-    transition: max-height 0.6s ease-out, opacity 0.4s ease;
-    z-index: 2; /* Ensure the menu is behind the toggle */
-    backdrop-filter: blur(10px); /* Blur effect for a modern glass-like appearance */
-    width: max-content; /* Adjusts the menu width to fit its content */
-    min-width: 200px; /* Minimum width to keep the menu looking balanced */
-}
-
-.nav-menu.show {
-    max-height: 400px; /* Increased height for more menu items */
-    opacity: 1;
-}
-
-/* Menu Items */
-.nav-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-menu ul li {
-    padding: 10px 20px; /* Reduced padding for a more compact look */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle bottom border for item separation */
-    white-space: nowrap; /* Prevents line break for longer text */
-}
-
-.nav-menu ul li a {
-    color: #00ffcc; /* Neon teal color for menu item text */
-    text-decoration: none; /* Remove underline from links */
-    display: block;
-    font-size: 18px;
-    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
-    position: relative;
-    white-space: nowrap; /* Keeps text in one line */
-    padding: 8px 15px; /* Adjust padding to make menu more compact */
-}
-
-/* Adding Icons */
-.nav-menu ul li a::before {
-    content: '⫸'; /* Cool arrow-like icon */
-    margin-right: 10px;
-    color: #00ffcc; /* Neon color for icons */
-    transition: transform 0.3s;
-}
-
-.nav-menu ul li a:hover::before {
-    transform: translateX(5px); /* Subtle animation for icons */
-}
-
-/* Additional Cool Effects */
-.nav-menu ul li a::after {
-    display: none; /* Removed underline effect */
-}
-
-.search-container {
-    /* Add styles for search container if needed */
-}
+<section id="social-media" class="box">
+    <h2>SOCIAL MEDIA LINKS</h2>
+    <div class="social-media-links">
+        <a href="https://x.com/malisorn00" target="_blank" class="social-media-link">
+            <img src="C:\Users\Anthony Vargas\Desktop\CODING\images\1690643591twitter-x-logo-png.webp" alt="Twitter">
+        <a href="https://x.com/Yoko_apasra" target="_blank" class="social-media-link">
+            <img src="C:\Users\Anthony Vargas\Desktop\CODING\images\1690643591twitter-x-logo-png.webp" alt="Twitter">
+        </a>
+        <a href="https://www.instagram.com/faye_malisorn/?igsh=MWZ3bW81amRpd3ZrOA%3D%3D" target="_blank" class="social-media-link">
+            <img src="C:\Users\Anthony Vargas\Desktop\CODING\images\432-4329510_instagram-logo-logos-de-redes-sociales-instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.instagram.com/yokoapasraa/?igsh=MWZ3bW81amRpd3ZrOA%3D%3D" target="_blank" class="social-media-link">
+            <img src="C:\Users\Anthony Vargas\Desktop\CODING\images\432-4329510_instagram-logo-logos-de-redes-sociales-instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com/@faye_peraya" target="_blank" class="social-media-link">
+            <img src="C:\Users\Anthony Vargas\Desktop\CODING\images\tik-tok-icon-circle-11609379404aavrbp7kqt-removebg-preview.png">
+        </a>
+        <a href="https://www.tiktok.com/@apasraa?_r=1&_d=eekcmk80dg0lhh&sec_uid=ms4wljabaaaa4oqe8j9mv3v5t7sd1yth90cnqdkfc-elxg-ug3fkaigx4cxnuuxamt2nq9_naic3&share_author_id=6719033018302678018&sharer_language=en&source=h5_m&u_code=dh71ll1jlg0l38&timestamp=1723006014&user_" target="_blank" class="social-media-link">
+            <img src="C:\Users\Anthony Vargas\Desktop\CODING\images\tik-tok-icon-circle-11609379404aavrbp7kqt-removebg-preview.png">
+        </a>
+         <a href="https://m.weibo.cn/u/7915617979?jumpfrom=weibocom" target="_blank" class="social-media-link">
+            <img src="C:\Users\Anthony Vargas\Desktop\CODING\images\social_media_applications_16-weibo-512.webp" alt="Weibo">
+        </a>
+        <a href="https://m.weibo.cn/u/7916109712?t=0&luicode=10000011&lfid=231583" target="_blank" class="social-media-link">
+            <img src="C:\Users\Anthony Vargas\Desktop\CODING\images\social_media_applications_16-weibo-512.webp" alt="Weibo">
+        </a>
+    </div>
+</section>
+ 
+ 
+<section id="press">
+     <h2>EVENTS</h2>
+              <div class="events-section">
+        <div class="event-card">
+            <img src="C:\Users\Anthony Vargas\Desktop\CODING\images\1bf9dcd8607a4a21837ad1e43e67f62a_1200_1600_1609311.0x0.png" alt="Hackathon 2024" class="event-image">
+            <div class="event-header">
+                <h1>1ST FANMEETING IN HONG KONG</h1>
+            </div>
+            <div class="event-body">
+                <div class="event-details">
+                    <p class="date"><i class="icon-date"></i> August 28, 2024</p>
+                    <p class="location"><i class="icon-location"></i> MacPherson Stadium (Hong Kong)</p>
+                    <p class="description">Just a quick note to let you know that the event scheduled for [August 28, 2024] has now ended. Thank you for your interest and participation. Stay tuned for future updates and events!</p>
+                </div>
+                <div class="buy-tickets-container">
+                    <a href="https://www.showstart.com/event/236912" class="buy-tickets">Buy Tickets</a>
+                </div>
+            </div>
+        </div>
+        <div class="event-card">
+            <img src="event2.jpg" alt="Tech Expo 2024" class="event-image">
+            <div class="event-header">
+                <h1>Tech Expo 2024</h1>
+            </div>
+            <div class="event-body">
+                <div class="event-details">
+                    <p class="date"><i class="icon-date"></i> October 10-12, 2024</p>
+                    <p class="location"><i class="icon-location"></i> Los Angeles, CA</p>
+                    <p class="description">We wanted to remind you that the event scheduled for [Date] is just around the corner! We’re excited to have you join us and look forward to a great time.</p>
+                </div>
+                <div class="buy-tickets-container">
+                    <a href="#" class="buy-tickets">Buy Tickets</a>
+                </div>
+            </div>
+        </div>
+        <div class="event-card">
+            <img src="event3.jpg" alt="AI Summit 2024" class="event-image">
+            <div class="event-header">
+                <h1>AI Summit 2024</h1>
+            </div>
+            <div class="event-body">
+                <div class="event-details">
+                    <p class="date"><i class="icon-date"></i> November 5-7, 2024</p>
+                    <p class="location"><i class="icon-location"></i> San Francisco, CA</p>
+                    <p class="description">Dive into the world of Artificial Intelligence at the AI Summit. Engage with experts, attend insightful talks, and explore future trends.</p>
+                </div>
+                <div class="buy-tickets-container">
+                    <a href="#" class="buy-tickets">Buy Tickets</a>
+                </div>
+            </div>
+        </div>
+        <!-- Add more event cards here as needed -->
+    </div>
+</body>
+</html>
