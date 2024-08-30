@@ -274,9 +274,11 @@ body {
     line-height: 1.5;
 }
 
-.event-details .date, .event-details .location,  event-details .time{
-    color: #00e676; /* Neon green for date, location and time */
-    font-weight: bold;
+.event-details .date, 
+.event-details .location, 
+.event-details .time {
+    color: #00e676; /* Neon green for date, location, and time */
+    font-weight: bold; /* Makes the text bold */
 }
 
 .event-details .description {
