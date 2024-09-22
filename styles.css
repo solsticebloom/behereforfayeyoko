@@ -55,7 +55,7 @@ nav ul li a:hover {
     justify-content: left;
     align-items: left;
     height: calc(100vh - 80px); /* Adjust for header */
-    padding: 250px 250px; /* Adjust padding */
+    padding: 280px 280px; /* Adjust padding */
     text-align: left; 
 }
 
