@@ -10,6 +10,8 @@ body {
     background: linear-gradient(135deg, #0b0033, #09002d);
     color: #fff;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header */
@@ -17,16 +19,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px;
+    padding: 40px 50px;
     background-color: transparent;
-    position: sticky;
-    top: 0;
-    z-index: 100;
 }
 
 .logo h1 {
-    font-size: 24px;
+    font-size: 28px;
     color: #00d2ff;
+    font-weight: bold;
 }
 
 nav ul {
@@ -35,13 +35,13 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 15px;
+    margin: 0 13px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     transition: color 0.3s;
 }
 
@@ -49,18 +49,18 @@ nav ul li a:hover {
     color: #00d2ff;
 }
 
-nav ul li a.active {
-    color: #00d2ff;
+/* Main Sections */
+.main-section {
+    display: none;
+    justify-content: left;
+    align-items: left;
+    height: calc(100vh - 80px);
+    padding: 280px 280px;
+    text-align: left; 
 }
 
-/* Main Section */
-.main-section {
+.main-section.show {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 80px);
-    padding: 20px;
-    text-align: center;
 }
 
 .content h2 {
@@ -72,12 +72,13 @@ nav ul li a.active {
 
 .content p {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 25px;
     color: #bbb;
     max-width: 800px;
     line-height: 1.6;
 }
 
+/* Call to Action Button */
 .cta-btn {
     display: inline-block;
     margin-top: 30px;
@@ -94,26 +95,38 @@ nav ul li a.active {
     background: linear-gradient(135deg, #3a47d5, #00d2ff);
 }
 
-/* Events Section */
+/* Active Link Style */
+nav ul li a.active {
+    color: #00d2ff;
+}
+
 .events-section {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
-    padding: 20px;
+    justify-content: left; 
+    padding: 0px;
 }
 
 .event-card {
     background-color: #1b1f2f;
-    border-radius: 10px;
+    border: 1px solid #2c3e50;
+    border-radius: 0px;
     width: 300px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
     overflow: hidden;
+    transform-style: preserve-3d;
+    transition: all 0.4s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9);
 }
 
 .event-image-container {
     width: 100%;
-    height: 200px;
+    height: 400px;
     overflow: hidden;
 }
 
@@ -121,6 +134,7 @@ nav ul li a.active {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 0px;
 }
 
 .event-header {
@@ -130,20 +144,38 @@ nav ul li a.active {
 }
 
 .event-header h1 {
-    font-size: 18px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
     color: #ffffff;
     text-transform: uppercase;
+    letter-spacing: 1.5px;
     margin: 0;
 }
 
 .event-body {
-    padding: 15px;
-    text-align: center;
+    padding: 10px;
 }
 
-.event-body p {
-    margin-bottom: 10px;
+.event-details p {
+    margin: 10px 0;
     font-size: 16px;
+    line-height: 1.5;
+}
+
+.event-details .date, 
+.event-details .location, 
+.event-details .time {
+    color: #00e676;
+    font-weight: bold;
+}
+
+.event-details .description {
+    color: #cfd8dc;
+}
+
+.buy-tickets-container {
+    text-align: center;
+    margin-top: 15px;
 }
 
 .buy-tickets {
@@ -155,37 +187,36 @@ nav ul li a.active {
     font-size: 16px;
     font-weight: bold;
     border-radius: 50px;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 230, 118, 0.4);
 }
 
 .buy-tickets:hover {
     background-color: #0072ff;
     color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 114, 255, 0.6);
 }
 
-/* Media Queries */
+/* Media Queries for Responsive Design */
 
 /* Small screens (max-width: 768px) */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
+        padding: 20px 30px;
     }
 
     nav ul {
         flex-direction: column;
         align-items: flex-start;
-        margin-top: 10px;
     }
 
     nav ul li {
-        margin-bottom: 10px;
+        margin: 10px 0;
     }
 
     .main-section {
+        padding: 100px 20px;
         height: auto;
-        padding: 50px 20px;
     }
 
     .content h2 {
@@ -201,36 +232,35 @@ nav ul li a.active {
         font-size: 14px;
     }
 
-    .events-section {
-        flex-direction: column;
-        gap: 30px;
-    }
-
     .event-card {
         width: 100%;
     }
 
     .event-image-container {
-        height: 250px;
+        height: 300px;
     }
 
-    .event-header h1 {
-        font-size: 16px;
+    .event-card1, .event-card2 {
+        width: 100%;
     }
 
-    .event-body p {
-        font-size: 14px;
+    .event-card1 .event-image-container, .event-card2 .event-image-container {
+        height: 300px;
     }
 }
 
 /* Medium screens (max-width: 992px) */
 @media (max-width: 992px) {
+    header {
+        padding: 30px 40px;
+    }
+
     .main-section {
-        padding: 100px 30px;
+        padding: 200px 50px;
     }
 
     .content h2 {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .content p {
@@ -241,15 +271,46 @@ nav ul li a.active {
         width: 45%;
     }
 
+    .event-card1, .event-card2 {
+        width: 48%;
+    }
+
     .event-image-container {
-        height: 250px;
+        height: 350px;
     }
 
-    .event-header h1 {
-        font-size: 17px;
+    .event-card1 .event-image-container, .event-card2 .event-image-container {
+        height: 350px;
+    }
+}
+
+/* Large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .main-section {
+        padding: 280px 280px;
     }
 
-    .event-body p {
-        font-size: 15px;
+    .content h2 {
+        font-size: 35px;
+    }
+
+    .content p {
+        font-size: 25px;
+    }
+
+    .event-card {
+        width: 300px;
+    }
+
+    .event-card1, .event-card2 {
+        width: 400px;
+    }
+
+    .event-image-container {
+        height: 400px;
+    }
+
+    .event-card1 .event-image-container, .event-card2 .event-image-container {
+        height: 400px;
     }
 }
