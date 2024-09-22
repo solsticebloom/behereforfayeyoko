@@ -51,31 +51,31 @@ nav ul li a:hover {
 
 /* Main Sections */
 .main-section {
-    display: none; /* Hidden by default */
+    display: none;
     justify-content: left;
     align-items: left;
-    height: calc(100vh - 80px); /* Adjust for header */
-    padding: 280px 280px; /* Adjust padding */
+    height: calc(100vh - 80px);
+    padding: 280px 280px;
     text-align: left; 
 }
 
 .main-section.show {
-    display: flex; /* Only the selected section will be shown */
+    display: flex;
 }
 
 .content h2 {
-    font-size: 35px; /* Adjusted font size */
+    font-size: 35px;
     color: #fff;
     text-transform: uppercase;
-    margin-bottom: 20px; /* Added margin */
+    margin-bottom: 20px;
 }
 
 .content p {
     margin-top: 20px;
-    font-size: 25px; /* Adjusted font size */
+    font-size: 25px;
     color: #bbb;
-    max-width: 800px; /* Limit width for readability */
-    line-height: 1.6; /* Improved line spacing */
+    max-width: 800px;
+    line-height: 1.6;
 }
 
 /* Call to Action Button */
@@ -97,58 +97,58 @@ nav ul li a:hover {
 
 /* Active Link Style */
 nav ul li a.active {
-    color: #00d2ff; /* Change this to your desired blue color */
+    color: #00d2ff;
 }
 
 .events-section {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap if they exceed the width */
-    gap: 20px; /* Adds space between event cards */
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: left; 
     padding: 0px;
 }
 
 .event-card {
-    background-color: #1b1f2f; /* Dark panel color for a techy look */
-    border: 1px solid #2c3e50; /* Subtle border for depth */
+    background-color: #1b1f2f;
+    border: 1px solid #2c3e50;
     border-radius: 0px;
-    width: 300px; /* Fixed width for cards */
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7); /* Deep shadow for futuristic effect */
-    overflow: hidden; /* Prevent overflow */
-    transform-style: preserve-3d; /* 3D transform */
-    transition: all 0.4s ease; /* Smooth transition */
+    width: 300px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transition: all 0.4s ease;
 }
 
 .event-card:hover {
-    transform: translateY(-10px) scale(1.02); /* Lift and scale on hover */
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9); /* Enhanced shadow on hover */
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9);
 }
 
 .event-image-container {
-    width: 100%; /* Ensures the container matches the card width */
-    height: 400px; /* Set a fixed height */
-    overflow: hidden; /* Ensure no overflow */
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
 }
 
 .event-image {
-    width: 100%; /* Fill container width */
-    height: 100%; /* Fill container height */
-    object-fit: cover; /* Ensures image covers the space without distortion */
-    border-radius: 0px; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px;
 }
 
 .event-header {
-    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Gradient for header */
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
     padding: 10px;
     text-align: center;
 }
 
 .event-header h1 {
-    font-family: 'Orbitron', sans-serif; /* Techy font */
+    font-family: 'Orbitron', sans-serif;
     font-size: 13px;
-    color: #ffffff; /* White text for contrast */
-    text-transform: uppercase; /* Uppercase for style */
-    letter-spacing: 1.5px; /* Spacing for futuristic effect */
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
     margin: 0;
 }
 
@@ -165,12 +165,12 @@ nav ul li a.active {
 .event-details .date, 
 .event-details .location, 
 .event-details .time {
-    color: #00e676; /* Neon green for date, location, and time */
-    font-weight: bold; /* Makes the text bold */
+    color: #00e676;
+    font-weight: bold;
 }
 
 .event-details .description {
-    color: #cfd8dc; /* Light grey for description */
+    color: #cfd8dc;
 }
 
 .buy-tickets-container {
@@ -181,64 +181,136 @@ nav ul li a.active {
 .buy-tickets {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #00e676; /* Neon green button */
-    color: #0a0e1a; /* Dark text for contrast */
+    background-color: #00e676;
+    color: #0a0e1a;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
     border-radius: 50px;
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-    box-shadow: 0 5px 15px rgba(0, 230, 118, 0.4); /* Button shadow */
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 230, 118, 0.4);
 }
 
 .buy-tickets:hover {
-    background-color: #0072ff; /* Neon blue on hover */
+    background-color: #0072ff;
     color: #fff;
-    box-shadow: 0 8px 20px rgba(0, 114, 255, 0.6); /* Enhanced shadow */
+    box-shadow: 0 8px 20px rgba(0, 114, 255, 0.6);
 }
 
-/* Event 1 Styles */
-.event-card1 {
-    background-color: #1b1f2f;
-    border: 1px solid #2c3e50;
-    border-radius: 0px;
-    width: 400px; /* Smaller fixed width for Event 1 */
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
-    overflow: hidden;
-    transition: all 0.4s ease;
+/* Media Queries for Responsive Design */
+
+/* Small screens (max-width: 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .main-section {
+        padding: 100px 20px;
+        height: auto;
+    }
+
+    .content h2 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .cta-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .event-card {
+        width: 100%;
+    }
+
+    .event-image-container {
+        height: 300px;
+    }
+
+    .event-card1, .event-card2 {
+        width: 100%;
+    }
+
+    .event-card1 .event-image-container, .event-card2 .event-image-container {
+        height: 300px;
+    }
 }
 
-.event-card1 .event-image-container {
-    height: 400px; /* Square container (Instagram size) */
-    width: 100%;    /* Matches the width of the card */
-    position: relative;
+/* Medium screens (max-width: 992px) */
+@media (max-width: 992px) {
+    header {
+        padding: 30px 40px;
+    }
+
+    .main-section {
+        padding: 200px 50px;
+    }
+
+    .content h2 {
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 20px;
+    }
+
+    .event-card {
+        width: 45%;
+    }
+
+    .event-card1, .event-card2 {
+        width: 48%;
+    }
+
+    .event-image-container {
+        height: 350px;
+    }
+
+    .event-card1 .event-image-container, .event-card2 .event-image-container {
+        height: 350px;
+    }
 }
 
-.event-card1 .event-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Scales the image while filling the container */
-}
+/* Large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .main-section {
+        padding: 280px 280px;
+    }
 
-/* Event 2 Styles */
-.event-card2 {
-    background-color: #1b1f2f;
-    border: 1px solid #2c3e50;
-    border-radius: 0px;
-    width: 900px; /* Smaller fixed width for Event 2 */
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
-    overflow: hidden;
-    transition: all 0.4s ease;
-}
+    .content h2 {
+        font-size: 35px;
+    }
 
-.event-card2 .event-image-container {
-    height: 900px; /* Square container (Instagram size) */
-    width: 100%;    /* Matches the width of the card */
-    position: relative;
-}
+    .content p {
+        font-size: 25px;
+    }
 
-.event-card2 .event-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the space without stretching */
+    .event-card {
+        width: 300px;
+    }
+
+    .event-card1, .event-card2 {
+        width: 400px;
+    }
+
+    .event-image-container {
+        height: 400px;
+    }
+
+    .event-card1 .event-image-container, .event-card2 .event-image-container {
+        height: 400px;
+    }
 }
