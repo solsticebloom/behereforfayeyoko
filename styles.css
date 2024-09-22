@@ -55,7 +55,7 @@ nav ul li a:hover {
     justify-content: left;
     align-items: left;
     height: calc(100vh - 80px); /* Adjust for header */
-    padding: 150px 150px; /* Adjust padding */
+    padding: 250px 250px; /* Adjust padding */
     text-align: left; 
 }
 
@@ -72,7 +72,7 @@ nav ul li a:hover {
 
 .content p {
     margin-top: 20px;
-    font-size: 15px; /* Adjusted font size */
+    font-size: 25px; /* Adjusted font size */
     color: #bbb;
     max-width: 800px; /* Limit width for readability */
     line-height: 1.6; /* Improved line spacing */
