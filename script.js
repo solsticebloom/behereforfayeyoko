@@ -1,20 +1,39 @@
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('Document loaded and ready!');
+const sections = document.querySelectorAll('.main-section');
+const navLinks = document.querySelectorAll('nav ul li a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = e.target.getAttribute('data-section');
+
+        sections.forEach(section => {
+            section.classList.remove('show');
+        });
+
+        document.getElementById(target).classList.add('show');
+
+        // Remove active class from all links
+        navLinks.forEach(navLink => {
+            navLink.classList.remove('active');
+        });
+
+        // Add active class to the clicked link
+        e.target.classList.add('active');
+    });
 });
 
-const menuToggle = document.querySelector('.menu-toggle');
-const navMenu = document.querySelector('.nav-menu');
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Hide all sections
+        document.querySelectorAll('.main-section').forEach(section => {
+            section.classList.remove('show');
+        });
 
-menuToggle.addEventListener('click', function() {
-    navMenu.classList.toggle('show');
-    menuToggle.classList.toggle('hidden'); // Toggle the hidden class
+        // Show the selected section
+        const sectionId = this.getAttribute('data-section');
+        document.getElementById(sectionId).classList.add('show');
+    });
 });
-
-// Add a click event to close the menu if clicking outside of it
-document.addEventListener('click', function(event) {
-    if (!menuToggle.contains(event.target) && !navMenu.contains(event.target)) {
-        navMenu.classList.remove('show');
-        menuToggle.classList.remove('hidden');
-    }
-});
-
+q
