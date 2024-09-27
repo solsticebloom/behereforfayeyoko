@@ -206,3 +206,58 @@ body {
 .contact-submit {
   align-self: flex-start;
 }
+
+.menu-toggle {
+  position: relative; /* Position relative for absolute positioning of the inner elements */
+  background: linear-gradient(135deg, #ff6f61, #ff4a3d); /* Gradient background */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 30px; /* Rounded corners for a pill shape */
+  padding: 10px 20px; /* Padding for the button */
+  font-size: 24px; /* Font size for the toggle button */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition effects */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for a pop-up effect */
+}
+
+.menu-toggle:before {
+  content: ''; /* Empty content for the pseudo-element */
+  position: absolute; /* Position absolute for placement */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  width: 20px; /* Width of the inner dot */
+  height: 20px; /* Height of the inner dot */
+  background-color: white; /* Color of the inner dot */
+  border-radius: 50%; /* Circle shape */
+  transform: translate(-50%, -50%); /* Center the dot */
+  transition: transform 0.3s ease; /* Smooth transition for the dot */
+}
+
+.menu-toggle:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.menu-toggle:hover:before {
+  transform: translate(-50%, -50%) scale(1.2); /* Scale up the inner dot on hover */
+}
+
+.menu-toggle.active {
+  background: linear-gradient(135deg, #4caf50, #388e3c); /* Active state gradient */
+}
+
+.menu-toggle.active:before {
+  background-color: #ffffff; /* Inner dot color for active state */
+}
+
+.menu {
+  /* Rest of your menu styles */
+}
+
+/* Optional: Add a little flair to the menu itself */
+.menu {
+  background: rgba(255, 160, 122, 0.9); /* Semi-transparent background */
+  border-radius: 10px; /* Rounded corners for the menu */
+  padding: 15px; /* Padding for the menu */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow for the menu */
+}
+
