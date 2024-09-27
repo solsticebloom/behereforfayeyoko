@@ -16,3 +16,11 @@ function showSection(section) {
   // Close the menu after selecting a section
   toggleMenu();
 }
+
+// Ensure the home section is displayed by default
+window.onload = function() {
+  document.getElementById("home").classList.remove("hidden");
+  document.getElementById("about").classList.add("hidden");
+  document.getElementById("events").classList.add("hidden");
+  document.getElementById("contact").classList.add("hidden");
+};
