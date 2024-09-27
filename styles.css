@@ -1,356 +1,59 @@
-
-
-/* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #0b0033, #09002d);
-    color: #fff;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-/* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px; /* Adjusted for smaller screens */
-    background-color: transparent;
-}
-
-.logo h1 {
-    font-size: 24px; /* Slightly smaller for mobile */
-    color: #00d2ff;
-    font-weight: bold;
+  background-color: #333;
+  padding: 10px;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav ul li {
-    margin: 0 10px; /* Adjusted for mobile */
+  display: inline;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px; /* Slightly smaller */
-    transition: color 0.3s;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-nav ul li a:hover {
-    color: #00d2ff;
+main {
+  padding: 20px;
 }
 
-/* Main Sections */
-.main-section {
-    display: none;
-    justify-content: left;
-    align-items: left;
-    height: auto; /* Allow height to adjust naturally */
-    padding: 100px 20px; /* Adjust padding for mobile */
-    text-align: left;
+section {
+  display: none;
 }
 
-.main-section.show {
-    display: flex;
+section.active {
+  display: block;
 }
 
-.content h2 {
-    font-size: 28px; /* Adjusted for mobile */
-    color: #fff;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+h1 {
+  margin-bottom: 10px;
 }
 
-.content p {
-    margin-top: 20px;
-    font-size: 18px; /* Adjusted for mobile */
-    color: #bbb;
-    max-width: 100%; /* Use full width */
-    line-height: 1.6;
-}
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 10px;
+  }
 
-/* Call to Action Button */
-.cta-btn {
-    display: inline-block;
-    margin-top: 20px; /* Adjusted */
-    padding: 12px 20px; /* Adjusted for mobile */
-    background: linear-gradient(135deg, #00d2ff, #3a47d5);
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px; /* Adjusted */
-    border-radius: 30px;
-    transition: background 0.3s;
-}
-
-.cta-btn:hover {
-    background: linear-gradient(135deg, #3a47d5, #00d2ff);
-}
-
-/* Active Link Style */
-nav ul li a.active {
-    color: #00d2ff;
-}
-
-/* Upcoming Events Section */
-.upcoming-events {
-    padding: 50px 20px;
-    background: #0b0033;
-    color: #fff;
-}
-
-.events-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.events-header h2 {
-    font-size: 32px;
-    color: #00d2ff;
-    text-transform: uppercase;
-}
-
-.events-header p {
-    font-size: 18px;
-    color: #bbb;
-}
-
-/* Events Container */
-.events-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-/* Event Card */
-.event-card {
-    background-color: #1b1f2f;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 320px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-}
-
-.event-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8);
-}
-
-.event-header {
-    background: linear-gradient(135deg, #00c6ff, #0072ff);
-    padding: 15px;
-    text-align: center;
-}
-
-.event-header h1 {
+  nav ul li a {
     font-size: 16px;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.event-body {
-    padding: 20px;
-}
-
-.event-details p {
-    margin: 5px 0;
-    font-size: 16px;
-    color: #ddd;
-}
-
-.event-details .date, .event-details .location, .event-details .time {
-    color: #00e676;
-    font-weight: bold;
-}
-
-.event-details .description {
-    color: #cfd8dc;
-    margin-top: 10px;
-}
-
-.buy-tickets-container {
-    text-align: center;
-    margin-top: 15px;
-}
-
-.buy-tickets {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #00e676;
-    color: #0a0e1a;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 50px;
-    transition: background 0.3s, box-shadow 0.3s;
-}
-
-.buy-tickets:hover {
-    background-color: #0072ff;
-    color: #fff;
-    box-shadow: 0 8px 20px rgba(0, 114, 255, 0.6);
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .events-header h2 {
-        font-size: 24px;
-    }
-
-    .events-header p {
-        font-size: 16px;
-    }
-
-    .events-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .event-card {
-        width: 100%;
-    }
-
-    .event-details p {
-        font-size: 14px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .events-container {
-        justify-content: space-between;
-    }
-}
-
-/* Medium screens (max-width: 992px) */
-@media (max-width: 992px) {
-    header {
-        padding: 20px 30px; /* Adjusted */
-    }
-
-    .main-section {
-        padding: 150px 30px; /* Adjusted */
-    }
-
-    .content h2 {
-        font-size: 28px; /* Adjusted */
-    }
-
-    .content p {
-        font-size: 18px; /* Adjusted */
-    }
-
-    .event-card {
-        width: 45%; /* Adjust for medium screens */
-    }
-}
-
-/* Large screens (min-width: 1200px) */
-@media (min-width: 1200px) {
-    .main-section {
-        padding: 280px 280px;
-    }
-
-    .content h2 {
-        font-size: 35px;
-    }
-
-    .content p {
-        font-size: 25px;
-    }
-
-    .event-card {
-        width: 300px; /* Maintain larger width */
-    }
-}
-
-nav {
-    position: relative;
-}
-
-.toggle-menu {
-    display: none; /* Hide toggle button on desktop */
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.nav-links {
-    display: flex; /* Show links inline on desktop */
-    list-style: none;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-@media (max-width: 768px) {
-    .toggle-menu {
-        display: block; /* Show toggle button on mobile */
-    }
-
-    .nav-links {
-        display: none; /* Hide links by default on mobile */
-        flex-direction: column; /* Stack links vertically */
-        position: absolute;
-        top: 60px; /* Position below the header */
-        left: 0;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.9);
-    }
-
-    .nav-links.show {
-        display: flex; /* Show links when toggled */
-    }
-
-    .nav-links li {
-        margin: 10px 0; /* Spacing between items on mobile */
-    }
-}
-
-.main-section {
-    display: none; /* Hide all sections by default */
-}
-
-.main-section.show {
-    display: flex; /* Show only the active section */
-}
-
-.nav-links.show {
-    display: block; /* Display the menu when toggled */
-}
-
-.event-image {
-    width: 100%; /* Ensure it fills the container's width */
-    height: 0; /* Set height to 0 initially */
-    padding-bottom: 100%; /* This creates a square aspect ratio */
-    object-fit: cover; /* Ensure the image covers the entire area without distortion */
-}
-
-@media (max-width: 768px) {
-    .event-card1, .event-card2 {
-        margin: 10px; /* Add some margin for mobile view */
-    }
-
-    .event-header h1 {
-        font-size: 1.5rem; /* Adjust header font size for mobile */
-    }
-
-    .event-body {
-        padding: 10px; /* Add some padding for better spacing */
-    }
+  }
 }
