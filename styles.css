@@ -101,96 +101,100 @@ nav ul li a.active {
     color: #00d2ff;
 }
 
-.events-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px; /* Adjusted */
-    justify-content: center; /* Center for mobile */
-    padding: 0;
+/* Upcoming Events Section */
+.upcoming-events {
+    padding: 50px 20px;
+    background: #0b0033;
+    color: #fff;
 }
 
+.events-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.events-header h2 {
+    font-size: 32px;
+    color: #00d2ff;
+    text-transform: uppercase;
+}
+
+.events-header p {
+    font-size: 18px;
+    color: #bbb;
+}
+
+/* Events Container */
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Event Card */
 .event-card {
     background-color: #1b1f2f;
-    border: 1px solid #2c3e50;
-    border-radius: 0px;
-    width: 100%; /* Full width on mobile */
-    max-width: 300px; /* Limit size */
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 320px;
+    transition: transform 0.3s, box-shadow 0.3s;
     overflow: hidden;
-    transform-style: preserve-3d;
-    transition: all 0.4s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
 .event-card:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9);
+    transform: translateY(-10px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8);
 }
-
-.event-image {
-    width: 100%; /* Make image width 100% of the container */
-    height: 100%; /* Make image height 100% of the container */
-    object-fit: cover; /* Cover the area without distortion */
-}
-
-.event-image-container {
-    width: 100%; /* Ensure the container is full width */
-    height: 200px; /* Set a fixed height for the container */
-    overflow: hidden; /* Hide overflow if any */
-}
-
 
 .event-header {
     background: linear-gradient(135deg, #00c6ff, #0072ff);
-    padding: 10px;
+    padding: 15px;
     text-align: center;
 }
 
 .event-header h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 12px; /* Smaller for mobile */
-    color: #ffffff;
+    font-size: 16px;
+    color: #fff;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin: 0;
 }
 
 .event-body {
-    padding: 10px;
+    padding: 20px;
 }
 
 .event-details p {
-    margin: 5px 0; /* Adjusted for mobile */
-    font-size: 14px; /* Smaller for mobile */
-    line-height: 1.5;
+    margin: 5px 0;
+    font-size: 16px;
+    color: #ddd;
 }
 
-.event-details .date,
-.event-details .location,
-.event-details .time {
+.event-details .date, .event-details .location, .event-details .time {
     color: #00e676;
     font-weight: bold;
 }
 
 .event-details .description {
     color: #cfd8dc;
+    margin-top: 10px;
 }
 
 .buy-tickets-container {
     text-align: center;
-    margin-top: 10px; /* Adjusted for mobile */
+    margin-top: 15px;
 }
 
 .buy-tickets {
     display: inline-block;
-    padding: 8px 16px; /* Adjusted */
+    padding: 10px 20px;
     background-color: #00e676;
     color: #0a0e1a;
     text-decoration: none;
-    font-size: 14px; /* Adjusted */
+    font-size: 14px;
     font-weight: bold;
     border-radius: 50px;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 230, 118, 0.4);
+    transition: background 0.3s, box-shadow 0.3s;
 }
 
 .buy-tickets:hover {
@@ -199,47 +203,33 @@ nav ul li a.active {
     box-shadow: 0 8px 20px rgba(0, 114, 255, 0.6);
 }
 
-/* Media Queries for Responsive Design */
-
-/* Small screens (max-width: 768px) */
+/* Media Queries */
 @media (max-width: 768px) {
-    header {
-        padding: 15px 20px; /* Further adjusted */
+    .events-header h2 {
+        font-size: 24px;
     }
 
-    nav ul {
+    .events-header p {
+        font-size: 16px;
+    }
+
+    .events-container {
         flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .main-section {
-        padding: 100px 20px; /* Maintain padding for mobile */
-        height: auto; /* Allow natural height */
-    }
-
-    .content h2 {
-        font-size: 24px; /* Further reduced */
-    }
-
-    .content p {
-        font-size: 16px; /* Further reduced */
-    }
-
-    .cta-btn {
-        padding: 10px 20px;
-        font-size: 14px;
+        align-items: center;
     }
 
     .event-card {
-        width: 100%; /* Full width on mobile */
+        width: 100%;
     }
 
-    .event-image-container {
-        height: 200px; /* Adjust for mobile */
+    .event-details p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .events-container {
+        justify-content: space-between;
     }
 }
 
