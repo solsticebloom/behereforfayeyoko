@@ -353,4 +353,236 @@ nav {
     }
 }
 
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0b0033, #09002d);
+    color: #fff;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 10px; /* Added padding for mobile */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px; /* Adjusted padding for mobile */
+    background-color: transparent;
+}
+
+.logo h1 {
+    font-size: 20px; /* Adjusted font-size for mobile */
+    color: #00d2ff;
+}
+
+.toggle-menu {
+    display: block; /* Show toggle menu on mobile */
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: none; /* Hide menu links by default on mobile */
+    flex-direction: column;
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.nav-links.show {
+    display: flex; /* Show the links when toggled */
+}
+
+.nav-links li {
+    margin: 10px 0;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav-links li a.active {
+    color: #00d2ff;
+}
+
+/* Main Section */
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 60px 20px;
+    background: #0b0033;
+    height: auto;
+    text-align: left;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.content p {
+    font-size: 16px;
+    color: #bbb;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.cta-btn {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #00d2ff, #3a47d5);
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 30px;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background: linear-gradient(135deg, #3a47d5, #00d2ff);
+}
+
+/* Upcoming Events */
+.upcoming-events {
+    padding: 30px 20px;
+    background: #0b0033;
+    color: #fff;
+}
+
+.events-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.events-header h2 {
+    font-size: 24px; /* Mobile-friendly font size */
+    color: #00d2ff;
+    text-transform: uppercase;
+}
+
+.events-header p {
+    font-size: 16px;
+    color: #bbb;
+}
+
+.events-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.event-card {
+    background-color: #1b1f2f;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 320px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+}
+
+.event-header {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    padding: 10px;
+    text-align: center;
+}
+
+.event-header h1 {
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.event-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-body {
+    padding: 15px;
+}
+
+.event-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.event-details .date, .event-details .location, .event-details .time {
+    color: #00e676;
+    font-weight: bold;
+}
+
+.buy-tickets {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00e676;
+    color: #0a0e1a;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background 0.3s;
+}
+
+.buy-tickets:hover {
+    background-color: #0072ff;
+    color: #fff;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex; /* Show links inline on larger screens */
+        position: static;
+        flex-direction: row;
+    }
+
+    .main-section {
+        flex-direction: row; /* Side-by-side layout on tablets */
+        justify-content: space-between;
+    }
+
+    .event-card {
+        max-width: 45%; /* Make cards wider on tablets */
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-section {
+        padding: 100px 280px;
+    }
+
+    .event-card {
+        width: 300px;
+    }
+}
 
