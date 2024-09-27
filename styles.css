@@ -283,3 +283,50 @@ nav ul li a.active {
         width: 300px; /* Maintain larger width */
     }
 }
+
+nav {
+    position: relative;
+}
+
+.toggle-menu {
+    display: none; /* Hide toggle button on desktop */
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex; /* Show links inline on desktop */
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+@media (max-width: 768px) {
+    .toggle-menu {
+        display: block; /* Show toggle button on mobile */
+    }
+
+    .nav-links {
+        display: none; /* Hide links by default on mobile */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: 60px; /* Position below the header */
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    .nav-links.show {
+        display: flex; /* Show links when toggled */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Spacing between items on mobile */
+    }
+}
+
