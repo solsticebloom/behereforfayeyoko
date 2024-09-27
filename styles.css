@@ -335,9 +335,10 @@ nav {
 }
 
 .event-image {
-    width: 50%; /* Make image width 100% of the container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Cover the area without distortion */
+    width: 100%; /* Ensure it fills the container's width */
+    height: 0; /* Set height to 0 initially */
+    padding-bottom: 100%; /* This creates a square aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire area without distortion */
 }
 
 @media (max-width: 768px) {
