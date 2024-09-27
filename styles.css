@@ -335,7 +335,7 @@ nav {
 }
 
 .event-image {
-    width: 100%; /* Make image width 100% of the container */
+    width: 50%; /* Make image width 100% of the container */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Cover the area without distortion */
 }
