@@ -17,11 +17,20 @@
     }
 
     .menu-toggle {
-      background-color: transparent;
+      background-color: #ff6f61; /* Match header color */
       color: white;
       border: none;
+      border-radius: 5px; /* Rounded corners */
+      padding: 10px 15px; /* Padding for the button */
       font-size: 24px; /* Font size for the toggle button */
       cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for pop-up effect */
+    }
+
+    .menu-toggle:hover {
+      background-color: #ff4a3d; /* Darker shade on hover */
+      transform: scale(1.05); /* Slightly increase size on hover */
     }
 
     .menu {
