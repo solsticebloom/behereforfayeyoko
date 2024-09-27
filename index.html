@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>Event Hub</title>
   <link rel="stylesheet" href="styles.css">
   <style>
     /* Add your styles here */
@@ -30,12 +30,15 @@
       top: 60px; /* Positioning the menu below the header */
       left: 0;
       right: 0;
-      background-color:#ffa07a; /* Menu background color */
+      background-color: #ffa07a; /* Menu background color */
       z-index: 1000; /* Ensure menu is above other elements */
+      transition: max-height 0.3s ease; /* Smooth transition for height */
+      overflow: hidden; /* Hide overflow */
     }
 
     .menu.visible {
       display: block; /* Show the menu when visible */
+      max-height: 300px; /* Set a max height for the menu */
     }
 
     .menu ul {
@@ -132,7 +135,16 @@
   <script>
     function toggleMenu() {
       const menu = document.getElementById('menu');
+      const toggleButton = document.querySelector('.menu-toggle');
+
       menu.classList.toggle('visible');
+
+      // Change toggle button text based on menu state
+      if (menu.classList.contains('visible')) {
+        toggleButton.innerHTML = '✖'; // Change to 'X' when menu is open
+      } else {
+        toggleButton.innerHTML = '☰'; // Change back to hamburger icon when closed
+      }
     }
 
     function showSection(sectionId) {
