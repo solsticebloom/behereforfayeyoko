@@ -5,13 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Event Hub</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add your styles here */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #333; /* Header background color */
+    }
+
+    .menu-toggle {
+      background-color: transparent;
+      color: white;
+      border: none;
+      font-size: 24px; /* Font size for the toggle button */
+      cursor: pointer;
+    }
+
+    .menu {
+      display: none; /* Hide the menu by default */
+      position: absolute;
+      top: 60px; /* Positioning the menu below the header */
+      left: 0;
+      right: 0;
+      background-color: #444; /* Menu background color */
+      z-index: 1000; /* Ensure menu is above other elements */
+    }
+
+    .menu.visible {
+      display: block; /* Show the menu when visible */
+    }
+
+    .menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu-link {
+      display: block;
+      padding: 15px; /* Space between links */
+      color: white; /* Link color */
+      text-decoration: none; /* Remove underline */
+    }
+
+    .menu-link:hover {
+      background-color: #555; /* Background color on hover */
+    }
+
+    .hidden {
+      display: none; /* Class to hide sections */
+    }
+
+    /* Add additional styles for sections and buttons as needed */
+  </style>
 </head>
 <body>
   <!-- Header Section -->
   <header class="header">
-    </div>
-    <button class="menu-toggle" onclick="toggleMenu()">
-    </button>
+    <h1>Event Hub</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
   </header>
 
   <!-- Navigation Menu (Toggle) -->
@@ -75,6 +129,20 @@
     </form>
   </section>
 
-  <script src="script.js"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('visible');
+    }
+
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.classList.add('hidden');
+      });
+      document.getElementById(sectionId).classList.remove('hidden');
+      toggleMenu(); // Close menu after selecting a section
+    }
+  </script>
 </body>
 </html>
