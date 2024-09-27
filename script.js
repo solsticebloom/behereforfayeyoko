@@ -1,17 +1,13 @@
-// Function to show a section and hide the others
-function showSection(sectionId) {
-  const sections = document.querySelectorAll('.section');
-  sections.forEach(section => {
-    if (section.id === sectionId) {
-      section.classList.add('active');
-    } else {
-      section.classList.remove('active');
-    }
-  });
-}
+// JavaScript for menu toggle
+document.querySelector('.menu-toggle').addEventListener('click', () => {
+  alert('Menu clicked! You can add more functionality here.');
+});
 
-// Function to toggle the navigation menu
-function toggleMenu() {
-  const navMenu = document.getElementById('nav-menu');
-  navMenu.classList.toggle('visible'); // Toggle the visibility class
-}
+// JavaScript for event interactions
+document.querySelector('.event-booking').addEventListener('click', () => {
+  alert('Booking functionality coming soon!');
+});
+
+document.querySelector('.more-about-event').addEventListener('click', () => {
+  alert('Redirecting to more event details...');
+});
