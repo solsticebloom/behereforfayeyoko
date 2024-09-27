@@ -19,12 +19,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 50px;
+    padding: 20px 30px; /* Adjusted for smaller screens */
     background-color: transparent;
 }
 
 .logo h1 {
-    font-size: 28px;
+    font-size: 24px; /* Slightly smaller for mobile */
     color: #00d2ff;
     font-weight: bold;
 }
@@ -35,13 +35,13 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 13px;
+    margin: 0 10px; /* Adjusted for mobile */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px; /* Slightly smaller */
     transition: color 0.3s;
 }
 
@@ -54,9 +54,9 @@ nav ul li a:hover {
     display: none;
     justify-content: left;
     align-items: left;
-    height: calc(100vh - 80px);
-    padding: 280px 280px;
-    text-align: left; 
+    height: auto; /* Allow height to adjust naturally */
+    padding: 100px 20px; /* Adjust padding for mobile */
+    text-align: left;
 }
 
 .main-section.show {
@@ -64,7 +64,7 @@ nav ul li a:hover {
 }
 
 .content h2 {
-    font-size: 35px;
+    font-size: 28px; /* Adjusted for mobile */
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -72,21 +72,21 @@ nav ul li a:hover {
 
 .content p {
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 18px; /* Adjusted for mobile */
     color: #bbb;
-    max-width: 800px;
+    max-width: 100%; /* Use full width */
     line-height: 1.6;
 }
 
 /* Call to Action Button */
 .cta-btn {
     display: inline-block;
-    margin-top: 30px;
-    padding: 15px 30px;
+    margin-top: 20px; /* Adjusted */
+    padding: 12px 20px; /* Adjusted for mobile */
     background: linear-gradient(135deg, #00d2ff, #3a47d5);
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px; /* Adjusted */
     border-radius: 30px;
     transition: background 0.3s;
 }
@@ -103,16 +103,17 @@ nav ul li a.active {
 .events-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: left; 
-    padding: 0px;
+    gap: 10px; /* Adjusted */
+    justify-content: center; /* Center for mobile */
+    padding: 0;
 }
 
 .event-card {
     background-color: #1b1f2f;
     border: 1px solid #2c3e50;
     border-radius: 0px;
-    width: 300px;
+    width: 100%; /* Full width on mobile */
+    max-width: 300px; /* Limit size */
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
     overflow: hidden;
     transform-style: preserve-3d;
@@ -126,7 +127,7 @@ nav ul li a.active {
 
 .event-image-container {
     width: 100%;
-    height: 400px;
+    height: 200px; /* Adjusted for mobile */
     overflow: hidden;
 }
 
@@ -145,7 +146,7 @@ nav ul li a.active {
 
 .event-header h1 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 13px;
+    font-size: 12px; /* Smaller for mobile */
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -157,13 +158,13 @@ nav ul li a.active {
 }
 
 .event-details p {
-    margin: 10px 0;
-    font-size: 16px;
+    margin: 5px 0; /* Adjusted for mobile */
+    font-size: 14px; /* Smaller for mobile */
     line-height: 1.5;
 }
 
-.event-details .date, 
-.event-details .location, 
+.event-details .date,
+.event-details .location,
 .event-details .time {
     color: #00e676;
     font-weight: bold;
@@ -175,16 +176,16 @@ nav ul li a.active {
 
 .buy-tickets-container {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px; /* Adjusted for mobile */
 }
 
 .buy-tickets {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 8px 16px; /* Adjusted */
     background-color: #00e676;
     color: #0a0e1a;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px; /* Adjusted */
     font-weight: bold;
     border-radius: 50px;
     transition: all 0.3s ease;
@@ -202,7 +203,7 @@ nav ul li a.active {
 /* Small screens (max-width: 768px) */
 @media (max-width: 768px) {
     header {
-        padding: 20px 30px;
+        padding: 15px 20px; /* Further adjusted */
     }
 
     nav ul {
@@ -215,16 +216,16 @@ nav ul li a.active {
     }
 
     .main-section {
-        padding: 100px 20px;
-        height: auto;
+        padding: 100px 20px; /* Maintain padding for mobile */
+        height: auto; /* Allow natural height */
     }
 
     .content h2 {
-        font-size: 28px;
+        font-size: 24px; /* Further reduced */
     }
 
     .content p {
-        font-size: 18px;
+        font-size: 16px; /* Further reduced */
     }
 
     .cta-btn {
@@ -233,54 +234,34 @@ nav ul li a.active {
     }
 
     .event-card {
-        width: 100%;
+        width: 100%; /* Full width on mobile */
     }
 
     .event-image-container {
-        height: 300px;
-    }
-
-    .event-card1, .event-card2 {
-        width: 100%;
-    }
-
-    .event-card1 .event-image-container, .event-card2 .event-image-container {
-        height: 300px;
+        height: 200px; /* Adjust for mobile */
     }
 }
 
 /* Medium screens (max-width: 992px) */
 @media (max-width: 992px) {
     header {
-        padding: 30px 40px;
+        padding: 20px 30px; /* Adjusted */
     }
 
     .main-section {
-        padding: 200px 50px;
+        padding: 150px 30px; /* Adjusted */
     }
 
     .content h2 {
-        font-size: 30px;
+        font-size: 28px; /* Adjusted */
     }
 
     .content p {
-        font-size: 20px;
+        font-size: 18px; /* Adjusted */
     }
 
     .event-card {
-        width: 45%;
-    }
-
-    .event-card1, .event-card2 {
-        width: 48%;
-    }
-
-    .event-image-container {
-        height: 350px;
-    }
-
-    .event-card1 .event-image-container, .event-card2 .event-image-container {
-        height: 350px;
+        width: 45%; /* Adjust for medium screens */
     }
 }
 
@@ -299,18 +280,6 @@ nav ul li a.active {
     }
 
     .event-card {
-        width: 300px;
-    }
-
-    .event-card1, .event-card2 {
-        width: 400px;
-    }
-
-    .event-image-container {
-        height: 400px;
-    }
-
-    .event-card1 .event-image-container, .event-card2 .event-image-container {
-        height: 400px;
+        width: 300px; /* Maintain larger width */
     }
 }
