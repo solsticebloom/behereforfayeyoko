@@ -12,13 +12,43 @@
     <div class="logo">
       <span class="logo-icon">E</span> Event Hub
     </div>
-    <button class="menu-toggle">
+    <button class="menu-toggle" onclick="toggleMenu()">
       <img src="menu-icon.png" alt="Menu">
     </button>
   </header>
 
-  <!-- Main Section -->
-  <section class="featured-event">
+  <!-- Navigation Menu -->
+  <nav id="menu" class="menu">
+    <ul>
+      <li><a href="#home" class="menu-link">Home</a></li>
+      <li><a href="#about" class="menu-link">About</a></li>
+      <li><a href="#events" class="menu-link">Events</a></li>
+      <li><a href="#contact" class="menu-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <img src="hero-event.jpg" alt="Event Banner" class="home-image">
+    <div class="home-content">
+      <h1>Welcome to Event Hub</h1>
+      <p>Your one-stop destination for the most exciting events happening near you. Browse, book, and enjoy!</p>
+      <button class="btn explore-events">Explore Events</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="about-content">
+      <h2>About Us</h2>
+      <p>At Event Hub, we connect you with the best events happening around the world. Whether it's a concert, conference, or festival, we bring you the latest details, so you can be a part of the excitement.</p>
+      <button class="btn more-about">Learn More</button>
+    </div>
+    <img src="about-image.jpg" alt="About Us Image" class="about-image">
+  </section>
+
+  <!-- Featured Event Section -->
+  <section id="events" class="featured-event">
     <img src="event-image.jpg" alt="Featured Event" class="event-image">
     <div class="event-details">
       <h1 class="event-title">Music Fest 2024</h1>
@@ -29,13 +59,6 @@
       </div>
       <button class="btn event-booking">Book Now</button>
     </div>
-  </section>
-
-  <!-- Event Overview Section -->
-  <section class="event-overview">
-    <h2>Special Events</h2>
-    <p>Join us at some of the most exciting events happening this year. Click to know more!</p>
-    <button class="btn more-about-event">More about Events</button>
   </section>
 
   <!-- Events List Section -->
@@ -64,7 +87,7 @@
   </section>
 
   <!-- Footer Call to Action -->
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <button class="btn view-all-events">View All Events</button>
     <button class="btn contact-us">Contact Us</button>
   </footer>
