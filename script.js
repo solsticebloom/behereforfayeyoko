@@ -1,7 +1,18 @@
 function toggleMenu() {
-  const menu = document.getElementById("menu");
-  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+  const menu = document.getElementById('menu');
+  const toggleButton = document.querySelector('.menu-toggle');
+
+  menu.classList.toggle('visible');
+  toggleButton.classList.toggle('active'); // Toggle active class
+
+  // Change toggle button text based on menu state
+  if (menu.classList.contains('visible')) {
+    toggleButton.innerHTML = '✖'; // Change to 'X' when menu is open
+  } else {
+    toggleButton.innerHTML = '☰'; // Change back to hamburger icon when closed
+  }
 }
+
 
 function showSection(section) {
   // Hide all sections
