@@ -11,6 +11,10 @@ body {
   color: #333;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Header */
 .header {
   display: flex;
@@ -175,63 +179,29 @@ body {
   margin: 10px 0;
 }
 
-/* Event Overview Section */
-.event-overview {
+/* Contact Section */
+.contact-section {
   padding: 20px;
-  background-color: white;
-  border-radius: 20px;
-  margin: 20px 0;
 }
 
-.event-overview h2 {
-  font-size: 1.3rem;
-  color: #ff6f61;
-  margin-bottom: 10px;
-}
-
-/* Events List Section */
-.event-list {
-  padding: 20px;
-  background-color: white;
-}
-
-.event-list h2 {
-  font-size: 1.3rem;
-  color: #ff6f61;
-  margin-bottom: 20px;
-}
-
-.event-card {
+.contact-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #f9f9f9;
-  border-radius: 20px;
-  padding: 15px;
-  margin-bottom: 20px;
 }
 
-.event-card img {
-  width: 100%;
-  border-radius: 20px;
-  margin-bottom: 15px;
-}
-
-.event-card h3 {
-  font-size: 1.2rem;
+.contact-form label {
   margin-bottom: 5px;
+  color: #333;
 }
 
-.see-more {
-  color: #ff6f61;
-  text-decoration: none;
-  font-weight: bold;
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-/* Footer Section */
-.footer {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  background-color: #ff6f61;
+.contact-submit {
+  align-self: flex-start;
 }
