@@ -330,3 +330,15 @@ nav {
     }
 }
 
+.main-section {
+    display: none; /* Hide all sections by default */
+}
+
+.main-section.show {
+    display: flex; /* Show only the active section */
+}
+
+.nav-links.show {
+    display: block; /* Display the menu when toggled */
+}
+
