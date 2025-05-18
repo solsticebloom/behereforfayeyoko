@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "bloodType": "O-",
+    "urgency": "High",
+    "location": "Manila General Hospital",
+    "contactName": "Dr. Reyes",
+    "contactNumber": "09171234567",
+    "message": "Patient needs O- blood urgently for surgery."
+  },
+  {
+    "id": "2",
+    "bloodType": "AB+",
+    "urgency": "Medium",
+    "location": "St. Luke’s Medical Center",
+    "contactName": "Nurse Santos",
+    "contactNumber": "09281234568",
+    "message": "Urgent AB+ blood required for trauma patient."
+  }
+]
