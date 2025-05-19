@@ -8,15 +8,5 @@
     "id": "2",
     "date": "June 10, 2025",
     "location": "Red Cross HQ"
-  },
-  {
-    "id": "3",
-    "date": "July 15, 2025",
-    "location": "Community Hospital"
-  },
-  {
-    "id": "4",
-    "date": "August 20, 2025",
-    "location": "Downtown Clinic"
   }
 ]
