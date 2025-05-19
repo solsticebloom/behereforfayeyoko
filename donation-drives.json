@@ -2,14 +2,14 @@
   {
     "id": "1",
     "date": "May 25, 2025",
-    "location": "City Health Center",
+    "location": "Antique Meical Center",
     "contactName": "Dr. Smith",
     "contactNumber": "09171234567"
   },
   {
     "id": "2",
     "date": "June 10, 2025",
-    "location": "Red Cross HQ",
+    "location": "Red Cross",
     "contactName": "Nurse Johnson",
     "contactNumber": "09281234568"
   }
