@@ -2,11 +2,15 @@
   {
     "id": "1",
     "date": "May 25, 2025",
-    "location": "City Health Center"
+    "location": "City Health Center",
+    "contactName": "Dr. Smith",
+    "contactNumber": "09171234567"
   },
   {
     "id": "2",
     "date": "June 10, 2025",
-    "location": "Red Cross HQ"
+    "location": "Red Cross HQ",
+    "contactName": "Nurse Johnson",
+    "contactNumber": "09281234568"
   }
 ]
